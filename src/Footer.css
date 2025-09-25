@@ -1,0 +1,19 @@
+.elem {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.elem h1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.elem p {
+    cursor: pointer;
+}
+
+.elem p:hover {
+    color: #cbcaca;
+}

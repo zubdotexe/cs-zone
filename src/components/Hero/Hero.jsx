@@ -2,7 +2,7 @@ import TicketStat from "./TicketStat";
 
 export default function Hero() {
     return (
-        <div className="flex flex-wrap gap-6 p-10 md:p-20">
+        <div className="flex flex-wrap gap-6 py-20 px-10 lg:px-4 max-w-[1330px] mx-auto">
             <TicketStat
                 bgColor={"bg-gradient-to-br from-[#632EE3] to-[#9F62F2]"}
                 cardTitle={"In-Progress"}
