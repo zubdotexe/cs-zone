@@ -5,8 +5,8 @@
     "status": "Open",
     "description": "Customer is unable to log into their account. Every time they try, the system returns an error message.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "John Doe",
-    "date": "09/20/2025"
+    "customer": "John Doe",
+    "createdAt": "09/20/2025"
   },
   {
     "id": "#1002",
@@ -14,8 +14,8 @@
     "status": "In-Progress",
     "description": "Website page fails to load completely. It hangs at 50% and then crashes.",
     "priority": "MEDIUM PRIORITY",
-    "customer_name": "Alice Johnson",
-    "date": "09/21/2025"
+    "customer": "Alice Johnson",
+    "createdAt": "09/21/2025"
   },
   {
     "id": "#1003",
@@ -23,8 +23,8 @@
     "status": "Open",
     "description": "The customer reported a failure during checkout. Payment was declined but their card was charged.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "David Smith",
-    "date": "09/22/2025"
+    "customer": "David Smith",
+    "createdAt": "09/22/2025"
   },
   {
     "id": "#1004",
@@ -32,8 +32,8 @@
     "status": "In-Progress",
     "description": "The customer’s order was confirmed but has not been shipped yet. Tracking shows no movement.",
     "priority": "MEDIUM PRIORITY",
-    "customer_name": "Megan Lee",
-    "date": "09/23/2025"
+    "customer": "Megan Lee",
+    "createdAt": "09/23/2025"
   },
   {
     "id": "#1005",
@@ -41,8 +41,8 @@
     "status": "Open",
     "description": "The customer received a defective product. The item is missing some essential parts.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "Chris Martin",
-    "date": "09/24/2025"
+    "customer": "Chris Martin",
+    "createdAt": "09/24/2025"
   },
   {
     "id": "#1006",
@@ -50,8 +50,8 @@
     "status": "Open",
     "description": "Customer requested a refund for an order, but it has not been processed yet despite the promise of a 5-day turnaround.",
     "priority": "MEDIUM PRIORITY",
-    "customer_name": "Sophia Green",
-    "date": "09/25/2025"
+    "customer": "Sophia Green",
+    "createdAt": "09/25/2025"
   },
   {
     "id": "#1007",
@@ -59,8 +59,8 @@
     "status": "In-Progress",
     "description": "Customer’s account was mistakenly suspended. They have contacted support but have not received a resolution yet.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "Michael Scott",
-    "date": "09/25/2025"
+    "customer": "Michael Scott",
+    "createdAt": "09/25/2025"
   },
   {
     "id": "#1008",
@@ -68,8 +68,8 @@
     "status": "In-Progress",
     "description": "Website takes too long to load, and pages are sometimes unresponsive.",
     "priority": "LOW PRIORITY",
-    "customer_name": "Rachel Adams",
-    "date": "09/26/2025"
+    "customer": "Rachel Adams",
+    "createdAt": "09/26/2025"
   },
   {
     "id": "#1009",
@@ -77,8 +77,8 @@
     "status": "Open",
     "description": "Customer finds the product recommendation feature to be inaccurate and irrelevant.",
     "priority": "LOW PRIORITY",
-    "customer_name": "Tom Harris",
-    "date": "09/26/2025"
+    "customer": "Tom Harris",
+    "createdAt": "09/26/2025"
   },
   {
     "id": "#1010",
@@ -86,8 +86,8 @@
     "status": "Open",
     "description": "Customer is unable to reset their password. They are not receiving the reset email despite multiple attempts.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "Nina Patel",
-    "date": "09/26/2025"
+    "customer": "Nina Patel",
+    "createdAt": "09/26/2025"
   },
   {
     "id": "#1011",
@@ -95,8 +95,8 @@
     "status": "In-Progress",
     "description": "Customer’s order was expected to arrive in 3 days, but it's been over a week with no updates on tracking.",
     "priority": "MEDIUM PRIORITY",
-    "customer_name": "Liam Williams",
-    "date": "09/26/2025"
+    "customer": "Liam Williams",
+    "createdAt": "09/26/2025"
   },
   {
     "id": "#1012",
@@ -104,8 +104,8 @@
     "status": "Open",
     "description": "The customer was charged the wrong amount. They were billed for an item that was out of stock.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "Olivia Brown",
-    "date": "09/27/2025"
+    "customer": "Olivia Brown",
+    "createdAt": "09/27/2025"
   },
   {
     "id": "#1013",
@@ -113,8 +113,8 @@
     "status": "In-Progress",
     "description": "Customers are facing an error at checkout, and the page won’t proceed to payment. Multiple complaints received.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "Ethan Davis",
-    "date": "09/27/2025"
+    "customer": "Ethan Davis",
+    "createdAt": "09/27/2025"
   },
   {
     "id": "#1014",
@@ -122,8 +122,8 @@
     "status": "Open",
     "description": "The customer’s account was deactivated by mistake. They are requesting reactivation urgently.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "Chloe Harris",
-    "date": "09/28/2025"
+    "customer": "Chloe Harris",
+    "createdAt": "09/28/2025"
   },
   {
     "id": "#1015",
@@ -131,8 +131,8 @@
     "status": "In-Progress",
     "description": "The customer is seeing incorrect tracking information on their order. They are requesting more details.",
     "priority": "MEDIUM PRIORITY",
-    "customer_name": "Aiden Clark",
-    "date": "09/28/2025"
+    "customer": "Aiden Clark",
+    "createdAt": "09/28/2025"
   },
   {
     "id": "#1016",
@@ -140,8 +140,8 @@
     "status": "Open",
     "description": "Customer reports that the mobile app crashes every time they try to log in. They are using an iPhone 13.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "Zoe Turner",
-    "date": "09/29/2025"
+    "customer": "Zoe Turner",
+    "createdAt": "09/29/2025"
   },
   {
     "id": "#1017",
@@ -149,8 +149,8 @@
     "status": "In-Progress",
     "description": "The customer received a completely different item than what they ordered. They are requesting a replacement.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "Isabella Evans",
-    "date": "09/29/2025"
+    "customer": "Isabella Evans",
+    "createdAt": "09/29/2025"
   },
   {
     "id": "#1018",
@@ -158,8 +158,8 @@
     "status": "Open",
     "description": "Customer returned an item 10 days ago but hasn’t received a refund yet. They are requesting an update.",
     "priority": "MEDIUM PRIORITY",
-    "customer_name": "Jackson Robinson",
-    "date": "09/30/2025"
+    "customer": "Jackson Robinson",
+    "createdAt": "09/30/2025"
   },
   {
     "id": "#1019",
@@ -167,8 +167,8 @@
     "status": "In-Progress",
     "description": "The customer was charged more than expected for their subscription renewal. They are asking for a refund of the overcharge.",
     "priority": "MEDIUM PRIORITY",
-    "customer_name": "Amelia Martinez",
-    "date": "09/30/2025"
+    "customer": "Amelia Martinez",
+    "createdAt": "09/30/2025"
   },
   {
     "id": "#1020",
@@ -176,8 +176,8 @@
     "status": "Open",
     "description": "Customer stopped receiving email notifications for order updates and account activity.",
     "priority": "LOW PRIORITY",
-    "customer_name": "Lucas King",
-    "date": "10/01/2025"
+    "customer": "Lucas King",
+    "createdAt": "10/01/2025"
   },
   {
     "id": "#1021",
@@ -185,8 +185,8 @@
     "status": "In-Progress",
     "description": "There is a broken link on the product page that leads to a 404 error. The customer flagged this issue.",
     "priority": "LOW PRIORITY",
-    "customer_name": "Mia Wilson",
-    "date": "10/01/2025"
+    "customer": "Mia Wilson",
+    "createdAt": "10/01/2025"
   },
   {
     "id": "#1022",
@@ -194,8 +194,8 @@
     "status": "Open",
     "description": "Customer sent a message to support a week ago but has not received a reply yet. They are seeking a resolution.",
     "priority": "MEDIUM PRIORITY",
-    "customer_name": "Benjamin Thomas",
-    "date": "10/02/2025"
+    "customer": "Benjamin Thomas",
+    "createdAt": "10/02/2025"
   },
   {
     "id": "#1023",
@@ -203,8 +203,8 @@
     "status": "In-Progress",
     "description": "Customer suggested adding a 'dark mode' feature to the website. They are waiting for confirmation on this request.",
     "priority": "LOW PRIORITY",
-    "customer_name": "Charlotte Lee",
-    "date": "10/02/2025"
+    "customer": "Charlotte Lee",
+    "createdAt": "10/02/2025"
   },
   {
     "id": "#1024",
@@ -212,8 +212,8 @@
     "status": "Open",
     "description": "Customer made a mistake while entering the shipping address. They are requesting a change before shipment.",
     "priority": "HIGH PRIORITY",
-    "customer_name": "Henry Adams",
-    "date": "10/03/2025"
+    "customer": "Henry Adams",
+    "createdAt": "10/03/2025"
   },
   {
     "id": "#1025",
@@ -221,7 +221,7 @@
     "status": "In-Progress",
     "description": "Customer entered a promotional code at checkout but was not able to apply it. They are asking for assistance.",
     "priority": "MEDIUM PRIORITY",
-    "customer_name": "Grace Walker",
-    "date": "10/03/2025"
+    "customer": "Grace Walker",
+    "createdAt": "10/03/2025"
   }
 ]

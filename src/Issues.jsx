@@ -41,14 +41,14 @@ export default function Issues({ issuePromise }) {
                                     </span>
                                 </div>
                                 <div className="flex flex-wrap gap-3 items-center">
-                                    <span>{issue.customer_name}</span>
+                                    <span>{issue.customer}</span>
                                     <span className="flex items-center gap-1">
                                         <img
                                             className="w-5"
                                             src={calendarIcon}
                                             alt="Calendar icon"
                                         />
-                                        {issue.date}
+                                        {issue.createdAt}
                                     </span>
                                 </div>
                             </div>
