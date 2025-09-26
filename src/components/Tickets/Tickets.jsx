@@ -23,7 +23,7 @@ export default function Tickets({ issuePromise, ongoingIssues, handleOngoingIssu
                 </Suspense>
             </div>
             <div className="flex-1 space-y-10">
-                <OngoingTickets></OngoingTickets>
+                <OngoingTickets ongoingIssues={ongoingIssues}></OngoingTickets>
                 <ResolvedTickets></ResolvedTickets>
             </div>
         </div>

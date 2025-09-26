@@ -4,13 +4,13 @@ import "./Issues.css";
 
 export default function PendingTicket({ issue, ongoingIssues, handleOngoingIssues }) {
     const handleClick = () => {
-        const res = ongoingIssues.find(oIssue => oIssue === issue.id);
+        const res = ongoingIssues.find(oIssue => oIssue.id === issue.id);
         console.log(res);
         
         if (res) return;
         
-        handleOngoingIssues(issue.id);
-        
+        handleOngoingIssues(issue);
+
         // toast.success(`Ticket ${issue.id} has been added to the task list!`);
         toast.success(
             <span>
