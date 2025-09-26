@@ -1,9 +1,19 @@
+import { toast } from "react-toastify";
 import calendarIcon from "../../assets/calendarIcon.png";
 import "./Issues.css";
 
 export default function PendingTicket({ issue }) {
+    const handleClick = () => {
+        // toast.success(`Ticket ${issue.id} has been added to the task list!`);
+        toast.success(
+            <span>
+                Ticket <strong>{issue.id}</strong> has been added to the task list!
+            </span>
+        )
+    };
+
     return (
-        <div className="p-4 space-y-3 rounded-sm bg-white hover:bg-gray-50">
+        <div onClick={handleClick} className="p-4 space-y-3 rounded-sm bg-white hover:bg-gray-50">
             <div className="flex flex-wrap gap-2 justify-between items-center">
                 <h2 className="font-medium text-xl">{issue.issue}</h2>
                 <button

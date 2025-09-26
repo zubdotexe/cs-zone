@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import FooterInfo from "./components/Footer/FooterInfo";
 import Copyright from "./components/Footer/Copyright";
 import Tickets from "./components/Tickets/Tickets";
+import { ToastContainer } from "react-toastify";
 
 const fetchData = async () => {
     const res = await fetch("/issueData.json");
@@ -25,6 +26,7 @@ function App() {
                 <FooterInfo></FooterInfo>
                 <Copyright></Copyright>
             </footer>
+            <ToastContainer />
         </div>
     );
 }
