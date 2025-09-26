@@ -2,8 +2,15 @@ import { toast } from "react-toastify";
 import calendarIcon from "../../assets/calendarIcon.png";
 import "./Issues.css";
 
-export default function PendingTicket({ issue }) {
+export default function PendingTicket({ issue, ongoingIssues, handleOngoingIssues }) {
     const handleClick = () => {
+        const res = ongoingIssues.find(oIssue => oIssue === issue.id);
+        console.log(res);
+        
+        if (res) return;
+        
+        handleOngoingIssues(issue.id);
+        
         // toast.success(`Ticket ${issue.id} has been added to the task list!`);
         toast.success(
             <span>

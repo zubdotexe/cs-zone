@@ -4,23 +4,35 @@ import FooterInfo from "./components/Footer/FooterInfo";
 import Copyright from "./components/Footer/Copyright";
 import Tickets from "./components/Tickets/Tickets";
 import { ToastContainer } from "react-toastify";
+import { useState } from "react";
 
 const fetchData = async () => {
     const res = await fetch("/issueData.json");
     return res.json();
 };
 
+const issuePromise = fetchData();
+
 function App() {
-    const issuePromise = fetchData();
+    const [ongoingIssues, setOngoingIssues] = useState([]);
+
+    const handleOngoingIssues = (issue) => {
+        // const updatedOngoingIssues = [...ongoingIssues, issue.id];
+        // setOngoingIssues(updatedOngoingIssues);
+        console.log('in parent');
+        setOngoingIssues(ongoingIssues => ongoingIssues = [...ongoingIssues, issue]);
+    }
+
+    console.log(ongoingIssues)
 
     return (
         <div className="bg-[#F5F5F5]">
             <header>
                 <Navbar></Navbar>
-                <Hero></Hero>
+                <Hero ongoingIssues={ongoingIssues}></Hero>
             </header>
             <main>
-                <Tickets issuePromise={issuePromise}></Tickets>
+                <Tickets issuePromise={issuePromise} ongoingIssues={ongoingIssues} handleOngoingIssues={handleOngoingIssues}></Tickets>
             </main>
             <footer className="bg-black pt-20">
                 <FooterInfo></FooterInfo>
