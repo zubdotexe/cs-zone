@@ -1,83 +1,227 @@
 [
   {
-    "issue_number": "#1001",
+    "id": "#1001",
     "issue": "Login Issue",
-    "issue_status": "Open",
+    "status": "Open",
     "description": "Customer is unable to log into their account. Every time they try, the system returns an error message.",
     "priority": "HIGH PRIORITY",
     "customer_name": "John Doe",
-    "issue_date": "09/20/2025"
+    "date": "09/20/2025"
   },
   {
-    "issue_number": "#1002",
+    "id": "#1002",
     "issue": "Page Load Error",
-    "issue_status": "In-Progress",
+    "status": "In-Progress",
     "description": "Website page fails to load completely. It hangs at 50% and then crashes.",
     "priority": "MEDIUM PRIORITY",
     "customer_name": "Alice Johnson",
-    "issue_date": "09/21/2025"
+    "date": "09/21/2025"
   },
   {
-    "issue_number": "#1003",
+    "id": "#1003",
     "issue": "Payment Failure",
-    "issue_status": "Open",
+    "status": "Open",
     "description": "The customer reported a failure during checkout. Payment was declined but their card was charged.",
     "priority": "HIGH PRIORITY",
     "customer_name": "David Smith",
-    "issue_date": "09/22/2025"
+    "date": "09/22/2025"
   },
   {
-    "issue_number": "#1004",
+    "id": "#1004",
     "issue": "Missing Order",
-    "issue_status": "In-Progress",
+    "status": "In-Progress",
     "description": "The customer’s order was confirmed but has not been shipped yet. Tracking shows no movement.",
     "priority": "MEDIUM PRIORITY",
     "customer_name": "Megan Lee",
-    "issue_date": "09/23/2025"
+    "date": "09/23/2025"
   },
   {
-    "issue_number": "#1005",
+    "id": "#1005",
     "issue": "Product Defect",
-    "issue_status": "Open",
+    "status": "Open",
     "description": "The customer received a defective product. The item is missing some essential parts.",
     "priority": "HIGH PRIORITY",
     "customer_name": "Chris Martin",
-    "issue_date": "09/24/2025"
+    "date": "09/24/2025"
   },
   {
-    "issue_number": "#1006",
+    "id": "#1006",
     "issue": "Refund Not Processed",
-    "issue_status": "Open",
+    "status": "Open",
     "description": "Customer requested a refund for an order, but it has not been processed yet despite the promise of a 5-day turnaround.",
     "priority": "MEDIUM PRIORITY",
     "customer_name": "Sophia Green",
-    "issue_date": "09/25/2025"
+    "date": "09/25/2025"
   },
   {
-    "issue_number": "#1007",
+    "id": "#1007",
     "issue": "Account Suspension",
-    "issue_status": "In-Progress",
+    "status": "In-Progress",
     "description": "Customer’s account was mistakenly suspended. They have contacted support but have not received a resolution yet.",
     "priority": "HIGH PRIORITY",
     "customer_name": "Michael Scott",
-    "issue_date": "09/25/2025"
+    "date": "09/25/2025"
   },
   {
-    "issue_number": "#1008",
+    "id": "#1008",
     "issue": "Slow Website Performance",
-    "issue_status": "In-Progress",
+    "status": "In-Progress",
     "description": "Website takes too long to load, and pages are sometimes unresponsive.",
     "priority": "LOW PRIORITY",
     "customer_name": "Rachel Adams",
-    "issue_date": "09/26/2025"
+    "date": "09/26/2025"
   },
   {
-    "issue_number": "#1009",
+    "id": "#1009",
     "issue": "Product Recommendation System",
-    "issue_status": "Open",
+    "status": "Open",
     "description": "Customer finds the product recommendation feature to be inaccurate and irrelevant.",
     "priority": "LOW PRIORITY",
     "customer_name": "Tom Harris",
-    "issue_date": "09/26/2025"
+    "date": "09/26/2025"
+  },
+  {
+    "id": "#1010",
+    "issue": "Password Reset Failure",
+    "status": "Open",
+    "description": "Customer is unable to reset their password. They are not receiving the reset email despite multiple attempts.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "Nina Patel",
+    "date": "09/26/2025"
+  },
+  {
+    "id": "#1011",
+    "issue": "Shipping Delay",
+    "status": "In-Progress",
+    "description": "Customer’s order was expected to arrive in 3 days, but it's been over a week with no updates on tracking.",
+    "priority": "MEDIUM PRIORITY",
+    "customer_name": "Liam Williams",
+    "date": "09/26/2025"
+  },
+  {
+    "id": "#1012",
+    "issue": "Incorrect Billing",
+    "status": "Open",
+    "description": "The customer was charged the wrong amount. They were billed for an item that was out of stock.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "Olivia Brown",
+    "date": "09/27/2025"
+  },
+  {
+    "id": "#1013",
+    "issue": "Technical Glitch in Checkout",
+    "status": "In-Progress",
+    "description": "Customers are facing an error at checkout, and the page won’t proceed to payment. Multiple complaints received.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "Ethan Davis",
+    "date": "09/27/2025"
+  },
+  {
+    "id": "#1014",
+    "issue": "Account Deactivation",
+    "status": "Open",
+    "description": "The customer’s account was deactivated by mistake. They are requesting reactivation urgently.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "Chloe Harris",
+    "date": "09/28/2025"
+  },
+  {
+    "id": "#1015",
+    "issue": "Inaccurate Tracking Information",
+    "status": "In-Progress",
+    "description": "The customer is seeing incorrect tracking information on their order. They are requesting more details.",
+    "priority": "MEDIUM PRIORITY",
+    "customer_name": "Aiden Clark",
+    "date": "09/28/2025"
+  },
+  {
+    "id": "#1016",
+    "issue": "App Crashing on iOS",
+    "status": "Open",
+    "description": "Customer reports that the mobile app crashes every time they try to log in. They are using an iPhone 13.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "Zoe Turner",
+    "date": "09/29/2025"
+  },
+  {
+    "id": "#1017",
+    "issue": "Wrong Item Received",
+    "status": "In-Progress",
+    "description": "The customer received a completely different item than what they ordered. They are requesting a replacement.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "Isabella Evans",
+    "date": "09/29/2025"
+  },
+  {
+    "id": "#1018",
+    "issue": "Refund Not Processed",
+    "status": "Open",
+    "description": "Customer returned an item 10 days ago but hasn’t received a refund yet. They are requesting an update.",
+    "priority": "MEDIUM PRIORITY",
+    "customer_name": "Jackson Robinson",
+    "date": "09/30/2025"
+  },
+  {
+    "id": "#1019",
+    "issue": "Overcharged for Subscription",
+    "status": "In-Progress",
+    "description": "The customer was charged more than expected for their subscription renewal. They are asking for a refund of the overcharge.",
+    "priority": "MEDIUM PRIORITY",
+    "customer_name": "Amelia Martinez",
+    "date": "09/30/2025"
+  },
+  {
+    "id": "#1020",
+    "issue": "Email Notifications Not Received",
+    "status": "Open",
+    "description": "Customer stopped receiving email notifications for order updates and account activity.",
+    "priority": "LOW PRIORITY",
+    "customer_name": "Lucas King",
+    "date": "10/01/2025"
+  },
+  {
+    "id": "#1021",
+    "issue": "Broken Link on Website",
+    "status": "In-Progress",
+    "description": "There is a broken link on the product page that leads to a 404 error. The customer flagged this issue.",
+    "priority": "LOW PRIORITY",
+    "customer_name": "Mia Wilson",
+    "date": "10/01/2025"
+  },
+  {
+    "id": "#1022",
+    "issue": "Delayed Customer Support Response",
+    "status": "Open",
+    "description": "Customer sent a message to support a week ago but has not received a reply yet. They are seeking a resolution.",
+    "priority": "MEDIUM PRIORITY",
+    "customer_name": "Benjamin Thomas",
+    "date": "10/02/2025"
+  },
+  {
+    "id": "#1023",
+    "issue": "Feature Request",
+    "status": "In-Progress",
+    "description": "Customer suggested adding a 'dark mode' feature to the website. They are waiting for confirmation on this request.",
+    "priority": "LOW PRIORITY",
+    "customer_name": "Charlotte Lee",
+    "date": "10/02/2025"
+  },
+  {
+    "id": "#1024",
+    "issue": "Shipping Address Mistake",
+    "status": "Open",
+    "description": "Customer made a mistake while entering the shipping address. They are requesting a change before shipment.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "Henry Adams",
+    "date": "10/03/2025"
+  },
+  {
+    "id": "#1025",
+    "issue": "Missing Promotional Code",
+    "status": "In-Progress",
+    "description": "Customer entered a promotional code at checkout but was not able to apply it. They are asking for assistance.",
+    "priority": "MEDIUM PRIORITY",
+    "customer_name": "Grace Walker",
+    "date": "10/03/2025"
   }
 ]
