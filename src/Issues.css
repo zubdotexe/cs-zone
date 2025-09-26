@@ -1,0 +1,29 @@
+.high-priority {
+    color: #F83044;
+}
+
+.med-priority {
+    color: #FEBB0C;
+}
+
+.low-priority {
+    color: #02A53B;
+}
+
+.statusOngoing {
+    background: #F8F3B9;
+    color: #9C7700;
+}
+
+.ongoingDot {
+    background: #FEBB0C;
+}
+
+.statusOpen {
+    background: #B9F8CF;
+    color: #0B5E06;
+}
+
+.openDot {
+    background: #02A53B;
+}
