@@ -1,0 +1,83 @@
+[
+  {
+    "issue_number": "#1001",
+    "issue": "Login Issue",
+    "issue_status": "Open",
+    "description": "Customer is unable to log into their account. Every time they try, the system returns an error message.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "John Doe",
+    "issue_date": "09/20/2025"
+  },
+  {
+    "issue_number": "#1002",
+    "issue": "Page Load Error",
+    "issue_status": "In-Progress",
+    "description": "Website page fails to load completely. It hangs at 50% and then crashes.",
+    "priority": "MEDIUM PRIORITY",
+    "customer_name": "Alice Johnson",
+    "issue_date": "09/21/2025"
+  },
+  {
+    "issue_number": "#1003",
+    "issue": "Payment Failure",
+    "issue_status": "Open",
+    "description": "The customer reported a failure during checkout. Payment was declined but their card was charged.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "David Smith",
+    "issue_date": "09/22/2025"
+  },
+  {
+    "issue_number": "#1004",
+    "issue": "Missing Order",
+    "issue_status": "In-Progress",
+    "description": "The customer’s order was confirmed but has not been shipped yet. Tracking shows no movement.",
+    "priority": "MEDIUM PRIORITY",
+    "customer_name": "Megan Lee",
+    "issue_date": "09/23/2025"
+  },
+  {
+    "issue_number": "#1005",
+    "issue": "Product Defect",
+    "issue_status": "Open",
+    "description": "The customer received a defective product. The item is missing some essential parts.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "Chris Martin",
+    "issue_date": "09/24/2025"
+  },
+  {
+    "issue_number": "#1006",
+    "issue": "Refund Not Processed",
+    "issue_status": "Open",
+    "description": "Customer requested a refund for an order, but it has not been processed yet despite the promise of a 5-day turnaround.",
+    "priority": "MEDIUM PRIORITY",
+    "customer_name": "Sophia Green",
+    "issue_date": "09/25/2025"
+  },
+  {
+    "issue_number": "#1007",
+    "issue": "Account Suspension",
+    "issue_status": "In-Progress",
+    "description": "Customer’s account was mistakenly suspended. They have contacted support but have not received a resolution yet.",
+    "priority": "HIGH PRIORITY",
+    "customer_name": "Michael Scott",
+    "issue_date": "09/25/2025"
+  },
+  {
+    "issue_number": "#1008",
+    "issue": "Slow Website Performance",
+    "issue_status": "In-Progress",
+    "description": "Website takes too long to load, and pages are sometimes unresponsive.",
+    "priority": "LOW PRIORITY",
+    "customer_name": "Rachel Adams",
+    "issue_date": "09/26/2025"
+  },
+  {
+    "issue_number": "#1009",
+    "issue": "Product Recommendation System",
+    "issue_status": "Open",
+    "description": "Customer finds the product recommendation feature to be inaccurate and irrelevant.",
+    "priority": "LOW PRIORITY",
+    "customer_name": "Tom Harris",
+    "issue_date": "09/26/2025"
+  }
+]
