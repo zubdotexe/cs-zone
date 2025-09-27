@@ -29,23 +29,28 @@ function App() {
         // const updatedOngoingIssues = [...ongoingIssues, issue.id];
         // setOngoingIssues(updatedOngoingIssues);
         console.log("in parent");
-        setOngoingIssues(
-            (ongoingIssues) => (ongoingIssues = [...ongoingIssues, issue])
-        );
+        setOngoingIssues((ongoingIssues) => {
+            return [...ongoingIssues, issue];
+        });
     };
 
     const resolveIssue = (issue) => {
         console.log("parent");
-        const updatedOngoingIssues = ongoingIssues.filter(oIssue => oIssue.id !== issue.id);
+        const updatedOngoingIssues = ongoingIssues.filter(
+            (oIssue) => oIssue.id !== issue.id
+        );
         setOngoingIssues(updatedOngoingIssues);
-        setResolvedIssues(issue => [...resolvedIssues, issue]);
+        setResolvedIssues((prevIssues) => [...prevIssues, issue]);
     };
 
     return (
         <div className="bg-[#F5F5F5]">
             <header>
                 <Navbar></Navbar>
-                <Hero ongoingIssues={ongoingIssues} resolvedIssues={resolvedIssues}></Hero>
+                <Hero
+                    ongoingIssues={ongoingIssues}
+                    resolvedIssues={resolvedIssues}
+                ></Hero>
             </header>
             <main>
                 <Tickets
@@ -53,6 +58,7 @@ function App() {
                     pendingIssues={pendingIssues}
                     ongoingIssues={ongoingIssues}
                     handleOngoingIssues={handleOngoingIssues}
+                    resolvedIssues={resolvedIssues}
                     resolveIssue={resolveIssue}
                 ></Tickets>
             </main>

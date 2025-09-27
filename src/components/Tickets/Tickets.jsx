@@ -3,7 +3,7 @@ import PendingTickets from "./PendingTickets";
 import OngoingTickets from "./OngoingTickets";
 import ResolvedTickets from "./ResolvedTickets";
 
-export default function Tickets({ issuePromise, pendingIssues, ongoingIssues, handleOngoingIssues, resolveIssue }) {
+export default function Tickets({ issuePromise, pendingIssues, ongoingIssues, handleOngoingIssues, resolvedIssues, resolveIssue }) {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-[2.3fr_.7fr] gap-8 max-w-[1330px] mx-auto pb-20 px-10 lg:px-4">
             <div className="space-y-4">
@@ -25,7 +25,7 @@ export default function Tickets({ issuePromise, pendingIssues, ongoingIssues, ha
             </div>
             <div className="flex-1 space-y-10">
                 <OngoingTickets ongoingIssues={ongoingIssues} resolveIssue={resolveIssue}></OngoingTickets>
-                <ResolvedTickets></ResolvedTickets>
+                <ResolvedTickets resolvedIssues={resolvedIssues}></ResolvedTickets>
             </div>
         </div>
     );
