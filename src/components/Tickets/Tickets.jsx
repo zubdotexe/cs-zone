@@ -1,7 +1,8 @@
 import { Suspense } from "react";
-import PendingTickets from "./PendingTickets";
-import OngoingTickets from "./OngoingTickets";
-import ResolvedTickets from "./ResolvedTickets";
+import PendingTickets from "./PendingTickets/PendingTickets";
+import OngoingTickets from "./OngoingTickets/OngoingTickets";
+import ResolvedTickets from "./ResolvedTickets/ResolvedTickets";
+import "./Issues.css";
 
 export default function Tickets({
     loading,

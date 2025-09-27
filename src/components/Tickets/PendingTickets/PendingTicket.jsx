@@ -1,6 +1,5 @@
 import { toast } from "react-toastify";
-import calendarIcon from "../../assets/calendarIcon.png";
-import "./Issues.css";
+import calendarIcon from "../../../assets/calendarIcon.png";
 
 export default function PendingTicket({
     issue,

@@ -8,7 +8,7 @@ export default function TicketStat({
 }) {
     return (
         <div
-            className={`animate-right flex-1 relative p-20 rounded-md ${bgColor}`}
+            className={`animate-right flex-1 relative p-10 sm:p-20 rounded-md ${bgColor}`}
         >
             <img
                 className="object-cover h-full absolute top-0 left-0"
