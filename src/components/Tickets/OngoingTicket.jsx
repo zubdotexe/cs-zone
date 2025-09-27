@@ -7,7 +7,7 @@ export default function OngoingTicket({oIssue, resolveIssue}) {
     };
 
     return (
-        <div className="bg-white hover:bg-gray-50 p-4 rounded-sm space-y-4 mb-4">
+        <div className="animate-left cursor-pointer cardShadow bg-white hover:bg-gray-50 p-4 rounded-sm space-y-4">
             <h3 className="font-medium text-xl text-black">{oIssue.issue}</h3>
             <button onClick={handleComplete} className="w-full btn bg-[#02A53B] font-semibold text-white">
                 Complete

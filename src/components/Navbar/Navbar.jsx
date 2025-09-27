@@ -1,7 +1,7 @@
 export default function Navbar() {
     return (
         <div className="bg-white">
-            <div className="flex flex-wrap gap-4 items-center justify-between px-10 lg:px-4 py-4 max-w-[1330px] mx-auto">
+            <div className="flex flex-wrap gap-4 items-center justify-between px-4 py-4 max-w-[1330px] mx-auto">
                 <h1 className="cursor-pointer font-bold text-2xl">
                     CS — Ticket System
                 </h1>

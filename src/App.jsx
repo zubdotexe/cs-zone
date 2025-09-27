@@ -6,20 +6,22 @@ import Tickets from "./components/Tickets/Tickets";
 import { ToastContainer } from "react-toastify";
 import { useEffect, useState } from "react";
 
-const fetchData = async () => {
-    const res = await fetch("/issueData.json");
-    return res.json();
-};
-
-const issuePromise = fetchData();
+// const issuePromise = fetchData();
 
 function App() {
     const [pendingIssues, setPendingIssues] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        fetch("./issueData.json")
-            .then((res) => res.json())
-            .then((data) => setPendingIssues(data));
+        const fetchData = async () => {
+            setLoading(true);
+            const res = await fetch("/issueData.json");
+            const data = await res.json();
+            setPendingIssues(data);
+            setLoading(false);
+        };
+
+        fetchData();
     }, []);
 
     const [ongoingIssues, setOngoingIssues] = useState([]);
@@ -28,19 +30,24 @@ function App() {
     const handleOngoingIssues = (issue) => {
         // const updatedOngoingIssues = [...ongoingIssues, issue.id];
         // setOngoingIssues(updatedOngoingIssues);
-        console.log("in parent");
+
         setOngoingIssues((ongoingIssues) => {
             return [...ongoingIssues, issue];
         });
     };
 
     const resolveIssue = (issue) => {
-        console.log("parent");
+        
         const updatedOngoingIssues = ongoingIssues.filter(
             (oIssue) => oIssue.id !== issue.id
         );
         setOngoingIssues(updatedOngoingIssues);
         setResolvedIssues((prevIssues) => [...prevIssues, issue]);
+
+        const updatedPendingIssues = pendingIssues.filter(
+            (pIssue) => pIssue.id !== issue.id
+        );
+        setPendingIssues(updatedPendingIssues);
     };
 
     return (
@@ -54,7 +61,8 @@ function App() {
             </header>
             <main>
                 <Tickets
-                    issuePromise={issuePromise}
+                    loading={loading}
+                    // issuePromise={issuePromise}
                     pendingIssues={pendingIssues}
                     ongoingIssues={ongoingIssues}
                     handleOngoingIssues={handleOngoingIssues}

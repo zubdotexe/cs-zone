@@ -6,7 +6,7 @@ import emailIcon from "../../assets/emailIcon.png";
 
 export default function FooterInfo() {
     return (
-        <div className="max-w-[1330px] mx-auto px-10 lg:px-4 text-[#A1A1AA] grid grid-cols-1 lg:grid-cols-6 gap-6">
+        <div className="max-w-[1330px] mx-auto px-4 text-[#A1A1AA] grid grid-cols-1 lg:grid-cols-6 gap-6">
             <div className="col-span-1 lg:col-span-2">
                 <h1 className="mb-4 font-bold text-2xl text-white">
                     CS — Ticket System

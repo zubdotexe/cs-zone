@@ -2,25 +2,39 @@ import { toast } from "react-toastify";
 import calendarIcon from "../../assets/calendarIcon.png";
 import "./Issues.css";
 
-export default function PendingTicket({ issue, ongoingIssues, handleOngoingIssues }) {
+export default function PendingTicket({
+    issue,
+    ongoingIssues,
+    handleOngoingIssues,
+}) {
     const handleClick = () => {
-        const res = ongoingIssues.find(oIssue => oIssue.id === issue.id);
-        console.log(res);
-        
-        if (res) return;
-        
+        const res = ongoingIssues.find((oIssue) => oIssue.id === issue.id);
+
+        if (res) {
+            toast.error(
+                <span>
+                    Ticket <strong>{issue.id}</strong> has already been added to
+                    Task Status!
+                </span>
+            );
+            return;
+        }
+
         handleOngoingIssues(issue);
 
         // toast.success(`Ticket ${issue.id} has been added to the task list!`);
         toast.success(
             <span>
-                Ticket <strong>{issue.id}</strong> has been added to the task list!
+                Ticket <strong>{issue.id}</strong> has been added to Task Status!
             </span>
-        )
+        );
     };
 
     return (
-        <div onClick={handleClick} className="p-4 space-y-3 rounded-sm bg-white hover:bg-gray-50">
+        <div
+            onClick={handleClick}
+            className="animate-right cursor-pointer cardShadow p-4 space-y-3 rounded-sm bg-white hover:bg-gray-50"
+        >
             <div className="flex flex-wrap gap-2 justify-between items-center">
                 <h2 className="font-medium text-xl">{issue.issue}</h2>
                 <button
@@ -56,7 +70,7 @@ export default function PendingTicket({ issue, ongoingIssues, handleOngoingIssue
                     <span>{issue.customer}</span>
                     <span className="flex items-center gap-1">
                         <img
-                            className="w-5"
+                            className="w-4"
                             src={calendarIcon}
                             alt="Calendar icon"
                         />
