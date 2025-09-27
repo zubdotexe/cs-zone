@@ -1,3 +1,5 @@
+import OngoingTicket from "./OngoingTicket";
+
 export default function OngoingTickets({ongoingIssues}) {
     return (
         <div>
@@ -8,14 +10,7 @@ export default function OngoingTickets({ongoingIssues}) {
                 <p className="text-gray-400">
                     {
                         ongoingIssues.length 
-                        ? ongoingIssues.map(oIssue => {
-                            return (
-                                <div className="bg-white hover:bg-gray-50 p-4 rounded-sm space-y-4 mb-4">
-                                    <h3 className="font-medium text-xl text-black">{oIssue.issue}</h3>
-                                    <button className="w-full btn bg-[#02A53B] font-semibold text-white">Complete</button>
-                                </div>
-                            )
-                        }) 
+                        ? ongoingIssues.map(oIssue => <OngoingTicket oIssue={oIssue}></OngoingTicket>) 
                         : "Select a ticket to add to Task Status"
                     }
                 </p>
