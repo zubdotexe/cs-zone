@@ -1,6 +1,6 @@
 import OngoingTicket from "./OngoingTicket";
 
-export default function OngoingTickets({ongoingIssues}) {
+export default function OngoingTickets({ongoingIssues, resolveIssue}) {
     return (
         <div>
             <h1 className="font-semibold text-2xl text-gray-600">
@@ -10,7 +10,7 @@ export default function OngoingTickets({ongoingIssues}) {
                 <p className="text-gray-400">
                     {
                         ongoingIssues.length 
-                        ? ongoingIssues.map(oIssue => <OngoingTicket oIssue={oIssue}></OngoingTicket>) 
+                        ? ongoingIssues.map(oIssue => <OngoingTicket oIssue={oIssue} resolveIssue={resolveIssue}></OngoingTicket>) 
                         : "Select a ticket to add to Task Status"
                     }
                 </p>

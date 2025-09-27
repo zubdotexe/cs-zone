@@ -1,8 +1,9 @@
 import { toast } from "react-toastify";
 
-export default function OngoingTicket({oIssue}) {
+export default function OngoingTicket({oIssue, resolveIssue}) {
     const handleComplete = () => {
         toast.success(<span>Ticket <strong>{oIssue.id}</strong> has been resolved!</span>);
+        resolveIssue(oIssue);
     };
 
     return (

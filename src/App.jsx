@@ -33,7 +33,11 @@ function App() {
         );
     };
 
-    console.log(ongoingIssues);
+    const resolveIssue = (issue) => {
+        console.log("parent");
+        const updatedOngoingIssues = ongoingIssues.filter(oIssue => oIssue.id !== issue.id);
+        setOngoingIssues(updatedOngoingIssues);
+    };
 
     return (
         <div className="bg-[#F5F5F5]">
@@ -47,6 +51,7 @@ function App() {
                     pendingIssues={pendingIssues}
                     ongoingIssues={ongoingIssues}
                     handleOngoingIssues={handleOngoingIssues}
+                    resolveIssue={resolveIssue}
                 ></Tickets>
             </main>
             <footer className="bg-black pt-20">
