@@ -23,6 +23,7 @@ function App() {
     }, []);
 
     const [ongoingIssues, setOngoingIssues] = useState([]);
+    const [resolvedIssues, setResolvedIssues] = useState([]);
 
     const handleOngoingIssues = (issue) => {
         // const updatedOngoingIssues = [...ongoingIssues, issue.id];
@@ -37,13 +38,14 @@ function App() {
         console.log("parent");
         const updatedOngoingIssues = ongoingIssues.filter(oIssue => oIssue.id !== issue.id);
         setOngoingIssues(updatedOngoingIssues);
+        setResolvedIssues(issue => [...resolvedIssues, issue]);
     };
 
     return (
         <div className="bg-[#F5F5F5]">
             <header>
                 <Navbar></Navbar>
-                <Hero ongoingIssues={ongoingIssues}></Hero>
+                <Hero ongoingIssues={ongoingIssues} resolvedIssues={resolvedIssues}></Hero>
             </header>
             <main>
                 <Tickets
