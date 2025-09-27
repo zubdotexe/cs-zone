@@ -3,7 +3,7 @@ import PendingTickets from "./PendingTickets";
 import OngoingTickets from "./OngoingTickets";
 import ResolvedTickets from "./ResolvedTickets";
 
-export default function Tickets({ issuePromise, ongoingIssues, handleOngoingIssues }) {
+export default function Tickets({ issuePromise, pendingIssues, ongoingIssues, handleOngoingIssues }) {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-[2.3fr_.7fr] gap-8 max-w-[1330px] mx-auto pb-20 px-10 lg:px-4">
             <div className="space-y-4">
@@ -17,6 +17,7 @@ export default function Tickets({ issuePromise, ongoingIssues, handleOngoingIssu
                 >
                     <PendingTickets
                         issuePromise={issuePromise}
+                        pendingIssues={pendingIssues}
                         ongoingIssues={ongoingIssues}
                         handleOngoingIssues={handleOngoingIssues}
                     ></PendingTickets>

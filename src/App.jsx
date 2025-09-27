@@ -4,7 +4,7 @@ import FooterInfo from "./components/Footer/FooterInfo";
 import Copyright from "./components/Footer/Copyright";
 import Tickets from "./components/Tickets/Tickets";
 import { ToastContainer } from "react-toastify";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const fetchData = async () => {
     const res = await fetch("/issueData.json");
@@ -14,16 +14,26 @@ const fetchData = async () => {
 const issuePromise = fetchData();
 
 function App() {
+    const [pendingIssues, setPendingIssues] = useState([]);
+
+    useEffect(() => {
+        fetch("./issueData.json")
+            .then((res) => res.json())
+            .then((data) => setPendingIssues(data));
+    }, []);
+
     const [ongoingIssues, setOngoingIssues] = useState([]);
 
     const handleOngoingIssues = (issue) => {
         // const updatedOngoingIssues = [...ongoingIssues, issue.id];
         // setOngoingIssues(updatedOngoingIssues);
-        console.log('in parent');
-        setOngoingIssues(ongoingIssues => ongoingIssues = [...ongoingIssues, issue]);
-    }
+        console.log("in parent");
+        setOngoingIssues(
+            (ongoingIssues) => (ongoingIssues = [...ongoingIssues, issue])
+        );
+    };
 
-    console.log(ongoingIssues)
+    console.log(ongoingIssues);
 
     return (
         <div className="bg-[#F5F5F5]">
@@ -32,7 +42,12 @@ function App() {
                 <Hero ongoingIssues={ongoingIssues}></Hero>
             </header>
             <main>
-                <Tickets issuePromise={issuePromise} ongoingIssues={ongoingIssues} handleOngoingIssues={handleOngoingIssues}></Tickets>
+                <Tickets
+                    issuePromise={issuePromise}
+                    pendingIssues={pendingIssues}
+                    ongoingIssues={ongoingIssues}
+                    handleOngoingIssues={handleOngoingIssues}
+                ></Tickets>
             </main>
             <footer className="bg-black pt-20">
                 <FooterInfo></FooterInfo>
